@@ -1,0 +1,10 @@
+{
+  "name": "rsschool-aws-course-be",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "deploy" : "npm --prefix aws-cdk run deploy",
+    "destroy" : "npm --prefix aws-cdk run destroy"
+  },
+  "license": "ISC"
+}

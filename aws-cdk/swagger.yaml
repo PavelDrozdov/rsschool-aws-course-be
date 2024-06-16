@@ -1,0 +1,69 @@
+---
+swagger: "2.0"
+info:
+  description: "This service serves product data."
+  version: "2024-06-16T18:10:54Z"
+  title: "rs-api"
+host: "ummbacinze.execute-api.eu-west-1.amazonaws.com"
+basePath: "/prod"
+schemes:
+  - "https"
+paths:
+  /products:
+    get:
+      consumes:
+        - "application/json"
+      responses: {}
+    options:
+      consumes:
+        - "application/json"
+      produces:
+        - "application/json"
+      responses:
+        "200":
+          description: "200 response"
+          schema:
+            $ref: "#/definitions/Empty"
+          headers:
+            Access-Control-Allow-Origin:
+              type: "string"
+            Access-Control-Allow-Methods:
+              type: "string"
+            Access-Control-Allow-Headers:
+              type: "string"
+  /products/{productId}:
+    get:
+      consumes:
+        - "application/json"
+      parameters:
+        - name: "productId"
+          in: "path"
+          required: true
+          type: "string"
+      responses: {}
+    options:
+      consumes:
+        - "application/json"
+      produces:
+        - "application/json"
+      parameters:
+        - name: "productId"
+          in: "path"
+          required: true
+          type: "string"
+      responses:
+        "200":
+          description: "200 response"
+          schema:
+            $ref: "#/definitions/Empty"
+          headers:
+            Access-Control-Allow-Origin:
+              type: "string"
+            Access-Control-Allow-Methods:
+              type: "string"
+            Access-Control-Allow-Headers:
+              type: "string"
+definitions:
+  Empty:
+    type: "object"
+    title: "Empty Schema"

@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "deploy" : "npm --prefix aws-cdk run deploy",
-    "destroy" : "npm --prefix aws-cdk run destroy"
+    "deploy" : "npm --prefix product-service run deploy",
+    "destroy" : "npm --prefix product-service run destroy"
   },
   "license": "ISC"
 }
